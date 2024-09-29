@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <h2>"{{advice}}"</h2>
+    <form method="get">
+        {% csrf_token %}
+        <input type="submit" value="Get Advice..." class="button-31">
+    </form>
+</div>
+<ul class="fade-up">
+{% for item in history %}
+    <li>{{item.advice}}</li>    
+    {% endfor %}
+</ul>
+
+{% endblock %}

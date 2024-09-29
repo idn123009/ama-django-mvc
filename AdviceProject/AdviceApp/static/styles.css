@@ -1,0 +1,90 @@
+/* General reset */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Centering content horizontally and vertically */
+.container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 500px;
+}
+
+/* Advice styles */
+h2 {
+  margin: 20px 0;
+}
+
+/* History of advice */
+ul {
+  list-style-type: none;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  overflow: hidden;
+}
+
+.fade-up {
+  background: -webkit-linear-gradient(rgb(255, 255, 255), rgba(0,0,0,0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* CSS */
+.button-31 {
+  background-color: #222;
+  border-radius: 4px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  max-width: none;
+  min-height: 44px;
+  min-width: 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.button-31:hover,
+.button-31:focus {
+  opacity: .75;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Footer at bottom of screen */
+footer {
+  margin-top: auto;
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
